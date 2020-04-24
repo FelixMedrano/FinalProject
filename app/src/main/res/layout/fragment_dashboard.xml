@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Dash"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.dashboard.DashboardFragment">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:padding="20dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="10dp"
+        android:text="Search movies"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+
+    <TextView
+        android:id="@+id/Display"
+
+        android:layout_width="404dp"
+        android:layout_height="464dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="96dp"
+        android:importantForAutofill="no"
+        android:padding="20dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/black"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintVertical_bias="0.309" />
+
+    <ImageView
+        android:id="@+id/Poster"
+        android:layout_width="184dp"
+        android:layout_height="223dp"
+        android:layout_marginBottom="92dp"
+
+        android:src="@android:drawable/ic_menu_camera"
+        app:layout_constraintBottom_toBottomOf="@+id/Display"
+        app:layout_constraintEnd_toEndOf="@+id/Display" />
+
+    <ImageButton
+        android:id="@+id/FavButton"
+        android:layout_width="58dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="64dp"
+        android:background="@android:color/transparent"
+        android:src="@android:drawable/btn_star_big_on"
+        app:layout_constraintBottom_toBottomOf="@+id/Display"
+        app:layout_constraintStart_toStartOf="@+id/Display" />
+
+    <TextView
+        android:id="@+id/saveFav"
+        android:layout_width="98dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:gravity="center"
+        android:text="Set as Favorite"
+        app:layout_constraintBottom_toTopOf="@+id/FavButton"
+        app:layout_constraintStart_toStartOf="@+id/Display" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

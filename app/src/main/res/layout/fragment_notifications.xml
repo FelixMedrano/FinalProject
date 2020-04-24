@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/notif"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.notifications.NotificationsFragment">
+
+    <TextView
+        android:id="@+id/text_notifications"
+        android:layout_width="11dp"
+        android:layout_height="3dp"
+        android:layout_marginStart="8dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" /><![CDATA[
+
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FavTitle" />
+
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Fav1" />
+
+    app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.411"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Fav2" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    ]]>
+
+    <TextView
+        android:id="@+id/Fav1"
+        android:layout_width="211dp"
+        android:layout_height="146dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/darker_gray"
+        android:textColor="#367588 "
+        android:textSize="25dp"
+        app:layout_constraintTop_toBottomOf="@+id/FavTitle"
+        tools:layout_editor_absoluteX="15dp" />
+
+    <TextView
+        android:id="@+id/Fav2"
+        android:layout_width="214dp"
+        android:layout_height="137dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/darker_gray"
+        android:textColor="#367588 "
+        android:textSize="25dp"
+        app:layout_constraintTop_toBottomOf="@+id/Fav1"
+        tools:layout_editor_absoluteX="15dp" />
+
+    <TextView
+        android:id="@+id/Fav3"
+        android:layout_width="211dp"
+        android:layout_height="129dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/darker_gray"
+        android:textColor="#367588 "
+        android:textSize="25dp"
+        app:layout_constraintTop_toBottomOf="@+id/Fav2"
+        tools:layout_editor_absoluteX="15dp" />
+
+    <TextView
+        android:id="@+id/FavTitle"
+        android:layout_width="292dp"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/Poster1"
+        android:layout_width="179dp"
+        android:layout_height="143dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="16dp"
+        android:src="@android:drawable/ic_menu_camera"
+        app:layout_constraintStart_toEndOf="@+id/Fav1"
+        app:layout_constraintTop_toBottomOf="@+id/FavTitle" />
+
+    <ImageView
+        android:id="@+id/Poster2"
+        android:layout_width="162dp"
+        android:layout_height="144dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_notifications_black_24dp"
+        app:layout_constraintStart_toEndOf="@+id/Fav2"
+        app:layout_constraintTop_toBottomOf="@+id/Poster1" />
+
+    <ImageView
+        android:id="@+id/Poster3"
+        android:layout_width="158dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_notifications_black_24dp"
+        app:layout_constraintStart_toEndOf="@+id/Fav3"
+        app:layout_constraintTop_toBottomOf="@+id/Poster2" />
+
+    <Button
+        android:id="@+id/Delete3"
+        android:layout_width="86dp"
+        android:layout_height="45dp"
+        android:text="Delete"
+        app:layout_constraintBottom_toBottomOf="@+id/Fav3"
+        app:layout_constraintStart_toStartOf="@+id/Fav3" />
+
+    <Button
+        android:id="@+id/Delete2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        app:layout_constraintBottom_toBottomOf="@+id/Fav2"
+        app:layout_constraintStart_toStartOf="@+id/Fav2" />
+
+    <Button
+        android:id="@+id/Delete1"
+        android:layout_width="91dp"
+        android:layout_height="50dp"
+        android:text="Delete"
+        app:layout_constraintBottom_toBottomOf="@+id/Fav1"
+        app:layout_constraintStart_toStartOf="@+id/Fav1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
